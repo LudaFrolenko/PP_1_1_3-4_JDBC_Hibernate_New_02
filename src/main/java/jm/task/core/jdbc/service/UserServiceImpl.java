@@ -23,6 +23,7 @@ public class UserServiceImpl implements UserService {
     @Override
     public void saveUser(String name, String lastName, byte age) {
         userDao.saveUser(name, lastName, age);
+        System.out.println("Пользователь с именем — " + name + " добавлен в базу данных");
     }
 
     @Override
